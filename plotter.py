@@ -3,10 +3,11 @@ import plotly.graph_objects as go
 import plotly.express as px
 from modules.mesh_cube import Mesh as CubeMesh
 from modules.mesh_bar import Mesh as BarMesh
+from modules.mesh_pyramid import Mesh as PyramidMesh
 from modules.assembly import Assembly
 from modules.solver import Solver
 
-mesh = BarMesh()
+mesh = PyramidMesh()
 x, y, z = mesh.get_nodes().T
 i, j, k = mesh.get_triangles().T
 
