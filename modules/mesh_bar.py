@@ -47,7 +47,7 @@ class Mesh:
         C3D8(nodes, [1, 2, 4, 5, 13, 14, 16, 17], Aluminium()),
         C3D8(nodes, [3, 4, 6, 7, 15, 16, 18, 19], Aluminium()),
         C3D8(nodes, [4, 5, 7, 8, 16, 17, 19, 20], Aluminium()),
-        C3D8(node s, [6, 7, 9, 10, 18, 19, 21, 22], Aluminium()),
+        C3D8(nodes, [6, 7, 9, 10, 18, 19, 21, 22], Aluminium()),
         C3D8(nodes, [7, 8, 10, 11, 19, 20, 22, 23], Aluminium()),
         C3D8(nodes, [12, 13, 15, 16, 24, 25, 27, 28], Aluminium()),
         C3D8(nodes, [13, 14, 16, 17, 25, 26, 28, 29], Aluminium()),
@@ -69,15 +69,15 @@ class Mesh:
         (24, False, False, False, 0), # Fixed at wall
         (25, False, False, False, 0), # Fixed at wall
         (26, False, False, False, 0), # Fixed at wall
-        (9, False, True, False, 1),  # Being pulled here (only in y-direction)
-        (10, False, True, False, 1), # Being pulled here (only in y-direction)
-        (11, False, True, False, 1), # Being pulled here (only in y-direction)
-        (21, False, True, False, 1), # Being pulled here (only in y-direction)
-        (22, False, True, False, 1), # Being pulled here (only in y-direction)
-        (23, False, True, False, 1), # Being pulled here (only in y-direction)
-        (33, False, True, False, 1), # Being pulled here (only in y-direction)
-        (34, False, True, False, 1), # Being pulled here (only in y-direction)
-        (35, False, True, False, 1), # Being pulled here (only in y-direction)
+        (9, False, True, False, -1),  # Being pulled here (only in y-direction)
+        (10, False, True, False, -1), # Being pulled here (only in y-direction)
+        (11, False, True, False, -1), # Being pulled here (only in y-direction)
+        (21, False, True, False, -1), # Being pulled here (only in y-direction)
+        (22, False, True, False, -1), # Being pulled here (only in y-direction)
+        (23, False, True, False, -1), # Being pulled here (only in y-direction)
+        (33, False, True, False, -1), # Being pulled here (only in y-direction)
+        (34, False, True, False, -1), # Being pulled here (only in y-direction)
+        (35, False, True, False, -1), # Being pulled here (only in y-direction)
     ]
 
     displacements = []
